@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQEQAAAAAAERAREAAAAAAAAAAAAAAAABEBARAAAAAREQEBERAAABEQERAREAABARAREBEBAAEBARERAQEAAQAAAAAAAQAAAQEREQEAAAABEBEQEQAAAAARAQEQAAAAAAEQEQAAAAAAAAAAAAAAAAAAAAAAAAD4PwAA8B8AAOAPAADABwAAgAMAAAABAAAAAQAAAAEAAAABAAAAAQAAgAMAAMAHAADgDwAA8B8AAPg/AAD//wAA" rel="icon" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <title>Board Game Tracker</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+  <form id="new-item-form">
+    <div id="form-wrapper">
+
+      <div class="form-item">
+        <label for="title">Game Title</label>
+        <input type="text" id = "title" required"/>
+      </div>
+      <br>
+      <div class="form-item">
+        <label for="designer">Designer</label>
+        <input type="text" id = "designer"/>
+      </div>
+      <br>
+      <div class="form-item">
+        <label for="players">Player Count</label>
+        <input type="text" id = "players" required"/>
+      </div>
+      <br>
+      <!-- Clean this up in a looping array later -->
+      <div class="form-item">
+          <label for="mechanic">Main Mechanic</label>
+          <select id="mechanic">
+            <option value="" disabled selected></option>
+            <option value="Action Points">Action Points</option>
+            <option value="Asymmetric Player Powers">Asymmetric Player Powers</option>
+            <option value="Auction">Auction</option>
+            <option value="Area Control">Area Control</option>
+            <option value="Card Based">Card Based</option>
+            <option value="Co-op">Co-op</option>
+            <option value="Deck Building">Deck Building</option>
+            <option value="Dice Rolling">Dice Rolling</option>
+            <option value="Hand Management">Hand Management</option>
+            <option value="Hidden Movement">Hidden Movement</option>
+            <option value="Hidden Traitor">Hidden Traitor</option>
+            <option value="Legacy">Legacy</option>
+            <option value="Pick Up and Deliver">Pick Up and Deliver</option>
+            <option value="Resource Management">Resource Management</option>
+            <option value="Roll and Write">Roll and Write</option>
+            <option value="Set Collection">Set Collection</option>
+            <option value="Tile Laying">Tile Laying</option>
+            <option value="Trading">Trading</option>
+            <option value="Trick Taking">Trick Taking</option>
+            <option value="Worker Placement">Worker Placement</option>
+          </select>
+        </div>
+        <br>
+        <div class ="form-item">
+          <label for="played">Played</label>
+            <input type="radio" id="yes" name="played" value="Yes" checked>
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="played" value="No">
+            <label for="no">No</label>
+        </div>
+        <br>
+    </div>
+    <input type="submit" value="Save"/>
+  </form>
+
+  <button id="delete-all">Delete All</button>
+
+  <h1>Games Added</h1>
+  <ul id="games-added"></ul>
+  </body>
+</html>
