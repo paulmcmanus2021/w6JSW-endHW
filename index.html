@@ -16,19 +16,19 @@
       <!-- First form item:Title(required) -->
       <div class="form-item">
         <label for="title">Game Title</label>
-        <input type="text" id = "title" required"/>
+        <input type="text" id = "title" placeholder = "e.g. Settlers of Catan" required"/>
       </div>
       <br>
       <!-- Second form item:Designer(not required) -->
       <div class="form-item">
         <label for="designer">Designer</label>
-        <input type="text" id = "designer"/>
+        <input type="text" id = "designer" placeholder = "e.g. Klaus Teuber"/>
       </div>
       <br>
       <!-- Third form item:Player Count(not required) -->
       <div class="form-item">
         <label for="players">Player Count</label>
-        <input type="text" id = "players" />
+        <input type="text" id = "players" placeholder = "e.g. 2-4"/>
       </div>
       <br>
       <!-- Clean this up in a looping array later -->
@@ -36,7 +36,7 @@
       <div class="form-item">
           <label for="mechanic">Main Mechanic</label>
           <select id="mechanic">
-            <option value="" disabled selected></option>
+            <option value="" selected disabled hidden>e.g. Resource Management</option>
             <option value="Action Points">Action Points</option>
             <option value="Asymmetric Player Powers">Asymmetric Player Powers</option>
             <option value="Auction">Auction</option>
