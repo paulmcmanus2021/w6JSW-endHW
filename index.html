@@ -10,25 +10,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
+  <!-- Declares entire form and container -->
   <form id="new-item-form">
     <div id="form-wrapper">
-
+      <!-- First form item:Title(required) -->
       <div class="form-item">
         <label for="title">Game Title</label>
         <input type="text" id = "title" required"/>
       </div>
       <br>
+      <!-- Second form item:Designer(not required) -->
       <div class="form-item">
         <label for="designer">Designer</label>
         <input type="text" id = "designer"/>
       </div>
       <br>
+      <!-- Third form item:Player Count(not required) -->
       <div class="form-item">
         <label for="players">Player Count</label>
-        <input type="text" id = "players" required"/>
+        <input type="text" id = "players" />
       </div>
       <br>
       <!-- Clean this up in a looping array later -->
+      <!-- Fourth form item:Mechanic-dropdown(not required) -->
       <div class="form-item">
           <label for="mechanic">Main Mechanic</label>
           <select id="mechanic">
@@ -56,6 +60,7 @@
           </select>
         </div>
         <br>
+        <!-- Fifth form item:Title-required -->
         <div class ="form-item">
           <label for="played">Played</label>
             <input type="radio" id="yes" name="played" value="Yes" checked>
