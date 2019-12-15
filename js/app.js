@@ -42,9 +42,15 @@ const createGameListItem = function (form) {
   played.textContent = `Played: ${form.played.value}`;
   gameListItem.appendChild(played);
 
+  const addPlayButton = document.createElement('button');
+  addPlayButton.innerHTML = "Change to Played";
+  gameListItem.appendChild(addPlayButton);
+  // addPlayButton.addEventListener('click', handleAddPlay)
+
   return gameListItem;
 }
 const handleDeleteAll = function (event) {
   const gameList = document.querySelector('#games-added');
   gameList.innerHTML = '';
+
 };
