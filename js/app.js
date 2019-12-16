@@ -42,10 +42,15 @@ const createGameListItem = function (form) {
   played.textContent = `Played: ${form.played.value}`;
   gameListItem.appendChild(played);
 
+  //If game has not been played, render a button that can be clicked later to change played to "Yes"
   const addPlayButton = document.createElement('button');
   addPlayButton.innerHTML = "Change to Played";
-  gameListItem.appendChild(addPlayButton);
-  // addPlayButton.addEventListener('click', handleAddPlay)
+  if (form.played.value === "No") {
+    gameListItem.appendChild(addPlayButton);
+    // addPlayButton.addEventListener('click', handleAddPlay)
+    return gameListItem;}
+  else
+    return gameListItem;
 
   return gameListItem;
 }

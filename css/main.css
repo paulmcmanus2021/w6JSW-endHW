@@ -16,10 +16,11 @@ body {
 }
 
 .game-list-item {
+  display: inline-block;
+  align-items: baseline;
   width: auto;
   height: auto;
   margin:auto;
   border: 1px solid black;
-  border-radius: 5%;
   background: #ddeaff;
   opacity: 0.9;
